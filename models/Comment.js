@@ -1,7 +1,7 @@
 
 const {Model, DataTypes}=require('sequelize');
 const { now } = require('sequelize/types/lib/utils');
-const sequelize = require = require('../config/connection');
+const sequelize = require = require('../config/connection.js');
 class Comment extends Model{}
 Comment.init(
     {
