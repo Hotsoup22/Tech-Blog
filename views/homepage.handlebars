@@ -1,0 +1,15 @@
+{{!-- <!-- Loop over each object in the projects array -->
+{{#each blogs as |blog| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+  
+
+  </div>
+</div>
+{{/each}} --}}
+<section class="pageTitle">
+    <h1>The Tech Blog</h1>
+</section>
+{{#each blogposts as |blogpost| }}
+{{> blogpost-full }}
+{{/each}}
