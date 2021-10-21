@@ -1,13 +1,13 @@
 [
     {
-        "_id": "1",
+   
         "name":"bob",
         "email": "bob@gmail.com",
         "password": "123456789"
 
     },
     {
-        "_id": "2",
+
         "name":"billy",
         "email":"billy@gmail.com",
         "password":"123456790"

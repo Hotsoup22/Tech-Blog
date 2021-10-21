@@ -1,0 +1,14 @@
+<section class="pageTitle">
+    <h1>Your Dashboard</h1>
+</section>
+
+<div class="blogpostCard">
+    <a href="/blogposts/{{ id }}" class="blogpostLink">
+        <div class="blogpostTitle">
+            <h2>{{ title }}</h2>
+            <h4>Posted by {{ user.username }} on {{ formatDate dateCreated }}</h3>
+        </div>
+    </a>
+    <p>{{ content }}</p>
+</div>
+<script src="/js/blogpost.js"></script>

@@ -13,6 +13,7 @@ User.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+
     },
       id: {
         type: DataTypes.INTEGER,

@@ -36,31 +36,31 @@ router.post( '/', withAuth, async ( req, res ) => {
 		res.status( 400 ).json( err );
 	}
 } );
-// // Display single blogpost with comments
-// router.get( '/:id', async ( req, res ) => {
+// Display single blogpost with comments
+router.get( '/:id', async ( req, res ) => {
 
-// 	try {
+	try {
 
-// 		const blogpostData = await BlogPost.findByPk( req.params.id, {
-// 			include: [
-// 				{ model: User,
-// 					attributes: ['name']},
-// 				{ model: Comment,
-// 					include: [
-// 						{ model: User,
-// 							attributes: ['name'] }
-// 					]}
-// 			]
-// 		});
+		const blogpostData = await BlogPost.findByPk( req.params.id, {
+			include: [
+				{ model: User,
+					attributes: ['name']},
+				{ model: Comment,
+					include: [
+						{ model: User,
+							attributes: ['name'] }
+					]}
+			]
+		});
 
-// 		const blogpost = blogpostData.get( { plain: true } );
-// 		res.render( 'singleBlogpost', {
-// 			blogpost,
-// 			logged_in: req.session.logged_in
-// 		} );
-// 	} catch ( err ) {
-// 		res.status( 500 ).json( err );
-// 	}
-// });
+		const blogpost = blogpostData.get( { plain: true } );
+		res.render( 'singleBlogpost', {
+			blogpost,
+			logged_in: req.session.logged_in
+		} );
+	} catch ( err ) {
+		res.status( 500 ).json( err );
+	}
+});
 // Export
 module.exports = router;

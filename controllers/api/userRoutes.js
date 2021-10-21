@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User} = require('../../models');
+const {User, Comment, BlogPost} = require('../../models');
 
 // Create new user
 router.post('/', async (req,res) => {
@@ -59,7 +59,7 @@ router.get( '/', async ( req, res ) => {
 	try {
 		const userData = await User.findAll( {
 			include: [
-				{ model: Blogpost },
+				{ model: BlogPost },
 				{ model: Comment }
 			]
 		} );

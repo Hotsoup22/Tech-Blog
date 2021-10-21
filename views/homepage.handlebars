@@ -1,15 +1,31 @@
-{{!-- <!-- Loop over each object in the projects array -->
-{{#each blogs as |blog| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-  
-
-  </div>
-</div>
-{{/each}} --}}
 <section class="pageTitle">
-    <h1>The Tech Blog</h1>
+    
 </section>
-{{#each blogposts as |blogpost| }}
-{{> blogpost-full }}
-{{/each}}
+
+
+
+  {{#if blogs.length}}
+  <div class="col-md-6 blog-post-list">
+    <h3>Blog Posts:</h3>
+
+    {{#each blogs as |blog|}}
+    <div class="card">
+      <div class="col-md-8">
+        <h4><a href="/blogs/{{blog.id}}">Post: {{blog.title}}</a></h4>
+        <p>id: {{id}}</p>
+        <p>{{blog.content}}</p>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+
+
+{{!--  --}}
+
+<script src="/js/homepage.js"></script>

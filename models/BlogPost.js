@@ -19,24 +19,26 @@ BlogPost.init(
                 type: DataTypes.TEXT,
                 allowNull:false
             },
-            dateCreated:{
-                type:DataTypes.DATE,
-                allowNull:false,
-                defaultValue: DataTypes.NOW
-            },
-            userId: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                references: {
-                    model: 'user',
-                    key: 'id',
-                },
+        // dateCreated:{
+        //         type:DataTypes.DATE,
+        //         allowNull:false,
+        //         defaultValue: DataTypes.NOW
+        // },
+        // userId: {
+        //         type: DataTypes.INTEGER,
+        //         allowNull: false,
+        //         references: {
+        //             model: 'user',
+        //             key: 'id',
+        //         },
         
-            },
-        },
+        // },
+    },
     {
         sequelize,
-        modelName:'BlogPost'
+		timestamps: false,
+		freezeTableName: true,
+		modelName: 'blogpost',
     }
 );
 module.exports = BlogPost;

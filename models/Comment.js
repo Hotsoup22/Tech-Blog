@@ -5,27 +5,45 @@ const sequelize = require = require('../config/connection.js');
 class Comment extends Model{}
 Comment.init(
     {
+        // id: {
+		// 	type: DataTypes.INTEGER,
+		// 	allowNull: false,
+		// 	primaryKey: true,
+		// 	autoIncrement: true,
+		// },
         content:{
-            type: DataTypes.TEXT
-        },
-        dateCreated:{
-            type:DataTypes.DATE,
+            type: DataTypes.TEXT,
             allowNull:false,
-            defaultValue:DataTypes.NOW
         },
-            blogpostId: {
-			type: DataTypes.INTEGER,
-			allowNull: false,
-			references: {
-				model: 'blogpost',
-				key: 'id',
-			},
-        },
+        // dateCreated:{
+        //     type:DataTypes.DATE,
+        //     allowNull:false,
+        //     defaultValue:DataTypes.NOW
+        // },
+        // userId: {
+		// 	type: DataTypes.INTEGER,
+		// 	allowNull: false,
+		// 	references: {
+		// 		model: 'user',
+		// 		key: 'id',
+		// 	},
+        // },
+        
+        //     blogpostId: {
+		// 	type: DataTypes.INTEGER,
+		// 	allowNull: false,
+		// 	references: {
+		// 		model: 'blogpost',
+		// 		key: 'id',
+		// 	},
+        // },
     },
     
     {
         sequelize,
-        modelName:'Comment'
+        modelName:'Comment',
+        timestamps: false,
+		freezeTableName: true,
     }
 );
 module.exports = Comment ;

@@ -1,16 +1,7 @@
-{{!-- <section class="pageTitle">
-    <h1>Your Dashboard</h1>
+<section class="pageTitle">
+    <h1>{{name}}'s Dashboard</h1>
 </section>
-{{#each blogposts as |blogpost| }}
-{{> blogpost-dashboard }}
-{{/each}}
-<a id="newPostBtn" href="/dashboard/newpost">+ New Post</a>
-<script src="/js/dashboard.js"></script> --}}
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
+
 
 <div class="row mt-4">
   <div class="col-md-6">
@@ -31,14 +22,16 @@
     </form>
   </div>
 
-  {{#if BlogPost.length}}
+  {{#if blogposts.length}}
   <div class="col-md-6 blog-post-list">
-    <h3>Previous Posts:</h3>
+    <h3>Blog Posts:</h3>
 
-    {{#each BlogPost as |blog|}}
-    <div class="row mb-2">
+    {{#each blogposts as |blog|}}
+    <div class="card">
       <div class="col-md-8">
-        <h4><a href="/blogs/{{blog.id}}">{{blog.title}}</a></h4>
+        <h4><a href="/blogs/{{blog.id}}">Post: {{blog.title}}</a></h4>
+        <p>id: {{id}}</p>
+        <p>{{blog.content}}</p>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
@@ -49,4 +42,7 @@
   {{/if}}
 </div>
 
+
+
 <script src="/js/dashboard.js"></script>
+{{!--  --}}
