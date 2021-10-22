@@ -32,7 +32,7 @@ router.get( '/signup', async ( req, res ) => {
 		return;
 	}
 
-	res.render( 'signup' );
+	res.render( 'signUp' );
 } );
 
 
