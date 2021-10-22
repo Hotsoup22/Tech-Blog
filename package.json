@@ -1,7 +1,7 @@
 {
   "name": "db",
   "version": "1.0.0",
-  "description": "",
+  "description": "build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.\r  # Future Dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,5 +24,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hotsoup42/Model-View-Controller-MVC-Tech-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hotsoup42/Model-View-Controller-MVC-Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/hotsoup42/Model-View-Controller-MVC-Tech-Blog#readme"
 }
