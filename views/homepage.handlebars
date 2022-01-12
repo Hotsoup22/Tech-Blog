@@ -2,7 +2,7 @@
     <h1> homepage</h1>
 </section>
 
-
+ {{#if logged_in}}
 
   {{#if blogs.length}}
   <div class="col-md-6 blog-post-list">
@@ -23,7 +23,7 @@
   </div>
   {{/if}}
 </div>
-
+{{/if}}
 
 
 {{!--  --}}
