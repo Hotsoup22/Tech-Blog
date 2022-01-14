@@ -1,29 +1,50 @@
-<section class="pageTitle">
-    <h1> homepage</h1>
-</section>
 
- {{#if logged_in}}
+
+
+{{#if logged_in}}
+
+
 
   {{#if blogs.length}}
-  <div class="col-md-6 blog-post-list">
-    <h3>Blog Posts:</h3>
+  <div class="blog-post-list">
+    <h3>Blog Post's</h3>
 
     {{#each blogs as |blog|}}
     <div class="card">
-      <div class="col-md-8">
-        <h4><a href="/blogs/{{blog.id}}">Post: {{blog.title}}</a></h4>
-        <p>id: {{id}}</p>
-        <p>{{blog.content}}</p>
+      <div class='card-head'>
+        <p class='post-title' href="/blogs/{{blog.id}}">{{ blog.title}}</p>
       </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+        <p class='post-content'>{{blog.content}}</p>
+      
+      <div class='deleteComment'>
+        <button type="button"class="btn-deleteComment" data-id="{{blog.id}}">Delete</button>
       </div>
     </div>
     {{/each}}
   </div>
   {{/if}}
-</div>
-{{/if}}
+{{else}}
+  <div class="homepage-signup">
+    <p>to create A Tech-Blog Post <a href="/login">Login</a> Or <a href="/signup">Sign-up</a></p>
+
+  </div> 
+
+  {{#if blogs.length  }}
+  <div class=" blog-post-list">
+    <h3>Blog Post's</h3>
+
+    {{#each blogs as |blog|}}
+    <div class="card">
+      <div class="post-card-head">
+        <h4 class="post-title"> {{blog.title}}</h4>
+      </div>
+      <div class="post-card-body">  
+        <p>{{blog.content}}</p>
+      </div>
+    </div>
+    {{/each}}
+   {{/if}} 
+{{/if}} 
 
 
 {{!--  --}}

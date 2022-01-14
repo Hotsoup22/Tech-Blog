@@ -1,0 +1,45 @@
+.blog-post-list{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+h3{
+   text-align: center;
+}
+
+.card{
+ 
+    border: solid;
+    border-width: 2px;
+    width: 200px;
+    margin: 1%;
+  
+    padding-bottom: 5px;
+    
+
+
+}
+.deleteComment{
+    text-align:end;
+    margin-right: 5px;
+}
+.card-head{
+    background-color: lightgreen;
+  
+}
+.post-title{
+    border-bottom: solid black 2px;
+     padding-left:5px;
+     margin-top:0px;
+}
+.post-content{
+    text-align: center;
+}
+.post-card-head{
+    justify-content: center;
+}
