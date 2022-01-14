@@ -17,14 +17,28 @@ router.get('/', async (req, res) => {
      const blogs = blogPostData.map((blogPost) => blogPost.get({ plain: true }));
     // const blogposts = blogPostData.map( serialize );
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      blogs, 
-      logged_in: req.session.logged_in 
-    });
+  
+    
+  
+      res.render('homepage', { 
+        blogs, 
+        logged_in: req.session.logged_in 
+      });
+    
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+//homepage
+// router.get('homepage', async (req,res) => {res.render('homepage', { 
+//   blogs, 
+//   logged_in: req.session.logged_in 
+// });
+// } catch (err) {
+// res.status(500).json(err);
+// };
+
 // Signup route
 router.get( '/signup', async ( req, res ) => {
 	if ( req.session.logged_in ) {
