@@ -7,6 +7,9 @@
   <title> Tech Blog</title>
   {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/loginStyles.css">
+  <link rel="stylesheet" href="/css/homepageStyles.css">
+  <link rel="stylesheet" href="/css/dashboardStyle.css">
 </head>
 
 <body>
@@ -17,7 +20,9 @@
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
+      
         {{#if logged_in}}
+       
         <a href="/dashboard">Dashboard</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
