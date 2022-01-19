@@ -28,3 +28,8 @@ const newFormHandler = async (event) => {
     .querySelector('.new-blog-post-form')
     .addEventListener('submit', newFormHandler);
   
+// function addDashboardstyles (){
+// 	const node = document.createTextNode("<link rel='stylesheet' href='/css/dashboardStyle.css'>")
+// 	document.getElementsByTagName("HEAD")[0].appendChild(node); 
+
+// }
