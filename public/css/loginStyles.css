@@ -1,0 +1,27 @@
+.login-card{
+    width: 25%;
+    border: 5px solid rgb(46, 18, 6);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding:10px;
+}
+
+ #email-login{
+width: 95%;    
+}
+
+#password-signup{
+    width:95%
+}
+
+.login-textTitle{
+    transform: translate(-50%, -50%);
+    background-color: rgb(46, 18, 6);
+    width: 26.6%;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    color:white;
+} 
