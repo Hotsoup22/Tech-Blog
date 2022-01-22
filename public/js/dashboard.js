@@ -23,13 +23,25 @@ const newFormHandler = async (event) => {
 	}
 };
 
+const delButtonHandler = async (event) => {
+	if (event.target.hasAttribute('data-id')) {
+	  const id = event.target.getAttribute('data-id');
   
-  document
+	  const response = await fetch(`/api/blogposts/${id}`, {
+		method: 'DELETE',
+	  });
+  
+	  if (response.ok) {
+		document.location.replace('/dashboard');
+	  } else {
+		alert('Failed to delete project');
+	  }
+	}
+  };
+  
+document
     .querySelector('.new-blog-post-form')
     .addEventListener('submit', newFormHandler);
-  
-// function addDashboardstyles (){
-// 	const node = document.createTextNode("<link rel='stylesheet' href='/css/dashboardStyle.css'>")
-// 	document.getElementsByTagName("HEAD")[0].appendChild(node); 
-
-// }
+document
+  .querySelector('.blog-post-list')
+  .addEventListener('click', delButtonHandler);
