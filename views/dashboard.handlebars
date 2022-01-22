@@ -4,45 +4,41 @@
 
 
 
-
-<div class='test'>
+<div class='newPostCard'>
   <form class="form new-blog-post-form">
     <p >Create a new blog post:</p>
     <div class="form-group">
       <label for="title">title:</label>
-      <input class="form-input" type="text" id="title" name="title" />
+      <input class="form-input" type="text" id="title" name="title" value="{{ blogposts.title }}"/>
     </div>
     <div class="form-group">
       <label for="content">post:</label>
-      <textarea class="form-input" id="content" name="content"></textarea>
+      <textarea class="form-input" id="content" name="content" value="{{ blogpost.content }}"></textarea>
     </div>
     <div class="su">
       <button type="submit" class="btn btn-primary">Create</button>
     </div>
   </form>
 
-
-{{#if blogposts.length}}
+  {{#if blogposts.length}}
 <div class="blog-post-list">
   <h3>Blog Posts:</h3>
 
   {{#each blogposts as |blog|}}
   <div class="card">
     <div class='card-head'>
-      <p class='post-title' href="/blogs/{{blog.id}}">{{ blog.title}}</p>
+      <p class='post-title' href="/blogposts/{{blog.id}}">{{ blog.title}}</p>
     </div>
       <p class='post-content'>{{blog.content}}</p>
       
-    <div class='deletePost'>
-      <button type="button"class="btn deletePost" data-id="{{blog.id}}">Delete</button>
+    <div class='deletePostDiv'>
+      <button type="submit" class="btn deletePostBtn" id='deletePostBtn' data-id="{{blog.id}}">Delete</button>
     </div>
   </div>
   {{/each}}
 </div>
 {{/if}}
-
-</div>  
-
+</div>
 
 <script src="/js/dashboard.js"></script>
 {{!--  --}}
