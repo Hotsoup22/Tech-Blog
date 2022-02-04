@@ -54,22 +54,22 @@ router.post( '/logout', ( req, res ) => {
 		res.status( 404 ).end();
 	}
 } );
-// GET All User data with blogposts and comments testing
-router.get( '/', async ( req, res ) => {
-	try {
-		const userData = await User.findAll( {
-			include: [
-				{ model: BlogPost },
-				{ model: Comment }
-			]
-		} );
+// // GET All User data with blogposts and comments testing
+// router.get( '/', async ( req, res ) => {
+// 	try {
+// 		const userData = await User.findAll( {
+// 			include: [
+// 				{ model: BlogPost },
+// 				{ model: Comment }
+// 			]
+// 		} );
 
-		res.json( userData );
+// 		res.json( userData );
 
-	} catch ( err ) {
-		res.status( 500 ).json( err );
-	}
-} );
+// 	} catch ( err ) {
+// 		res.status( 500 ).json( err );
+// 	}
+// } );
 
 
 
