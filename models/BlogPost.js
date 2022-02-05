@@ -19,18 +19,12 @@ BlogPost.init(
             type: DataTypes.TEXT,
             allowNull:false
         },
-        // user_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: 'user',
-        //         key: 'id',
-        //     },
+        date_created: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW
+          },
         },
-        // date_created: {
-        //     type: DataTypes.DATE,
-        //     allowNull: false,
-        //     defaultValue: DataTypes.NOW,
-        //   },
     // },
     {
         sequelize,
