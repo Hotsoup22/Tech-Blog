@@ -1,27 +1,46 @@
 .login-card{
-    width: 25%;
-    border: 5px solid rgb(46, 18, 6);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding:10px;
+  width: auto;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
 }
 
- #email-login{
-width: 95%;    
+#email-login[type=text]{
+  transition: width 0.4s ease-in-out;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;  
+}
+  
+#email-login[type=text]:focus {width: 150%;}
+
+#password-input[type=password]{
+  transition: width 0.4s ease-in-out;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+}
+  
+#password-input[type=password]:focus {width: 150%;}
+
+.loginBtn[type=submit]{
+  color:black;
+  width:40%;
+  background-color: transparent;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#password-signup{
-    width:95%
+.loginBtn:hover {
+  background-color: rgb(25, 31, 15);
+  color: beige;
 }
-
-.login-textTitle{
-    transform: translate(-50%, -50%);
-    background-color: rgb(46, 18, 6);
-    width: 26.6%;
-    position: absolute;
-    left: 50%;
-    top: 32%;
-    color:white;
-} 
