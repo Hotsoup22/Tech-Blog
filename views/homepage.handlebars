@@ -1,52 +1,54 @@
-
-
-
 {{#if logged_in}}
-
-
-
   {{#if blogs.length}}
   <div class="blog-post-list">
-    <h3>Blog Post's</h3>
-
+    <h3>Blog Post's Home-Page:</h3>
     {{#each blogs as |blog|}}
     <div class="card">
+
       <div class='card-head'>
-        <p class='post-title' href="/blogs/{{blog.id}}">{{ blog.title}}</p>
+        <h3 class='post-title' href="/blogs/{{blog.id}}">{{ blog.title}}</h3>
+        <div class='name-date-div'>
+        <p class='user-name'>Posted by: <b> {{user.name}} </b> </p>
+        <p class='date-created'>  on {{blog.date_created}}</p>
+        </div>
       </div>
+
+      <div class="card-body">
         <p class='post-content'>{{blog.content}}</p>
-      
-      <div class='deleteComment'>
-        <button type="button"class="btn-deleteComment" data-id="{{blog.id}}">Delete</button>
       </div>
+
     </div>
-    {{/each}}
+
+   {{/each}}
   </div>
   {{/if}}
+{{!-- if not logged-in --}}
 {{else}}
   <div class="homepage-signup">
-    <p>to create A Tech-Blog Post <a href="/login">Login</a> Or <a href="/signup">Sign-up</a></p>
-
+    <p><b>To Create You're own Tech-Blog Post <a href="/login">Login</a> Or <a href="/signup">Sign-up!</a></b></p>
   </div> 
 
   {{#if blogs.length  }}
   <div class=" blog-post-list">
-    <h3>Blog Post's</h3>
-
+    <h3>Blog Post's Home-Page:</h3>
     {{#each blogs as |blog|}}
-    <div class="card">
-      <div class="post-card-head">
-        <h4 class="post-title"> {{blog.title}}</h4>
+   <div class="card">
+
+      <div class='card-head'>
+        <h3 class='post-title' href="/blogs/{{blog.id}}">{{ blog.title}}</h3>
+        <div class='name-date-div'>
+        <p class='user-name'>Posted by: {{user.name}} </p>
+        <p class='date-created'>  on {{blog.date_created}}</p>
       </div>
-      <div class="post-card-body">  
-        <p>{{blog.content}}</p>
+
+      
+      <div class="card-body">
+        <p class='post-content'>{{blog.content}}</p>
       </div>
+      
     </div>
     {{/each}}
    {{/if}} 
 {{/if}} 
-
-
-{{!--  --}}
 
 <script src="/js/homepage.js"></script>
