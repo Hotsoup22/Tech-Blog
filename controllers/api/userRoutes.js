@@ -45,6 +45,7 @@ router.post('/login', async(req, res) => {
         res.status(400).json(err);
     }
 });
+
 router.post( '/logout', ( req, res ) => {
 	if ( req.session.logged_in ) {
 		req.session.destroy( () => {
@@ -54,23 +55,5 @@ router.post( '/logout', ( req, res ) => {
 		res.status( 404 ).end();
 	}
 } );
-// // GET All User data with blogposts and comments testing
-// router.get( '/', async ( req, res ) => {
-// 	try {
-// 		const userData = await User.findAll( {
-// 			include: [
-// 				{ model: BlogPost },
-// 				{ model: Comment }
-// 			]
-// 		} );
-
-// 		res.json( userData );
-
-// 	} catch ( err ) {
-// 		res.status( 500 ).json( err );
-// 	}
-// } );
-
-
 
 module.exports = router;
