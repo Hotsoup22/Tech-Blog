@@ -12,18 +12,6 @@
       background: rgb(76, 117, 95);
       transform: translateY(4px);
 };
-/* 'a' Tags in nav */
-a:link {
-    color: beige;
-    background-color: transparent;
-    text-decoration: none;   
-}
-
-a:visited {
-    color: beige;
-    background-color: transparent;
-    text-decoration: none;
-}
 
 nav{
     align-items: flex-end;
@@ -31,39 +19,11 @@ nav{
 };
 
 /* nav buttons */
-#dashboard{ 
-    display: inline-block;
-    color:beige;
-    border:beige 5px solid;
-    border-radius: 10px;
-    padding:2px;
-    margin-right: 10px;
-    background-color:transparent
-}
 
-#dashboard:hover{background-color: rgb(76, 117, 95);}
 
-#dashboard:active{
-    background: rgb(76, 117, 95);
-    transform: translateY(4px);
-}
 
-#logout{ 
-    color:beige;
-    background-color:transparent ;
-    border:beige 2px solid;
-    cursor: pointer;
-    border-radius: 10px;
-    padding:4px;
-}
 
-#logout:hover{background-color: rgb(76, 117, 95);}
 
-#logout:active{
-    background: rgb(76, 117, 95);
-    box-shadow: 1px #666;
-    transform: translateY(4px);
-}
 #login{
     display: inline-block;
     color:beige;
@@ -114,7 +74,17 @@ h3{
     text-align: center;
     margin-right: 26%
 }
+a:link {
+    color: beige;
+    background-color: transparent;
+    text-decoration: none;   
+}
 
+a:visited {
+    color: beige;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 .card-head{
     color:beige;
@@ -195,3 +165,34 @@ body{background-color: rgb(76, 117, 95);}
 }
 
 #deletePostBtn:hover {background: rgb(76, 117, 95);}
+#dashboard{ 
+    display: inline-block;
+    color:beige;
+    border:beige 2px solid;
+    border-radius: 10px;
+    padding:2px;
+    margin-right: 10px;
+    background-color:transparent
+}
+#dashboard:hover{background-color: rgb(76, 117, 95);}
+
+#dashboard:active{
+    background: rgb(76, 117, 95);
+    transform: translateY(4px);
+}
+#logout{ 
+    color:beige;
+    background-color:transparent ;
+    border:beige 2px solid;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:4px;
+}
+
+#logout:hover{background-color: rgb(76, 117, 95);}
+
+#logout:active{
+    background: rgb(76, 117, 95);
+    box-shadow: 1px #666;
+    transform: translateY(4px);
+}
