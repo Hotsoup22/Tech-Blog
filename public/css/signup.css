@@ -1,0 +1,79 @@
+.signupDiv{
+    display: flex;
+    margin-top:10%;
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+    flex-wrap: wrap;
+   
+}
+
+#name-signup[type=text]{
+    background-color: beige;
+    transition: width 0.4s ease-in-out;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none; 
+    width: 240px; 
+    text-align: center;
+    margin-left: 10px;
+}
+#name-signup[type=text]:focus {width: 300px;}
+
+#email-signup[type=text]{
+    transition: width 0.4s ease-in-out;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;  
+    width:240px;
+    text-align: center;
+    margin-left: 10px;
+}
+#email-signup[type=text]:focus {width: 300px;}
+
+#password-signup[type=password]{
+    transition: width 0.4s ease-in-out;
+    padding: 12px 20px;
+    margin: 8px 23px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: none;  
+    width:240px;
+    text-align: center;
+}
+#password-signup[type=password]:focus {width: 300px;}
+
+.label-form{
+    text-align: center;
+}
+
+hr{
+    border: 1px solid #000000;  
+}
+
+.signup-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: beige;
+    background-color: rgb(25, 31, 15);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(88, 88, 88);
+    margin-top: 20px;
+    margin-left:60px;
+  }
+  
+  .signup-btn:hover {background-color: rgb(25, 31, 15)}
+  
+  .signup-btn:active {
+    background-color: rgb(25, 31, 15);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
