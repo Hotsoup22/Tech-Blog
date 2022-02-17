@@ -5,7 +5,6 @@
     text-align: center;
     height: 60vh;
     flex-wrap: wrap;
-   
 }
 
 #name-signup[type=text]{
@@ -45,9 +44,6 @@
 }
 #password-signup[type=password]:focus {width: 300px;}
 
-.label-form{
-    text-align: center;
-}
 
 hr{
     border: 1px solid #000000;  
