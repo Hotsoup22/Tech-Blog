@@ -1,46 +1,53 @@
 .login-card{
-  width: auto;
-  height: 60vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:10px;
+  margin-top:10%;
+  flex-direction: column;
+  text-align: center;
+  height: 60vh;
+  flex-wrap: wrap;
+ 
 }
 
 #email-login[type=text]{
+  background-color: beige;
   transition: width 0.4s ease-in-out;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: none;  
+  border: none; 
+  width: 240px; 
+  text-align: center;
+  margin-left: 10px;
 }
   
-#email-login[type=text]:focus {width: 150%;}
+#email-login[type=text]:focus {width:  300px;}
 
 #password-input[type=password]{
   transition: width 0.4s ease-in-out;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 23px;
   box-sizing: border-box;
   border: none;
+  margin-left: 10px;
+  width:240px;
+  text-align: center;
 }
   
-#password-input[type=password]:focus {width: 150%;}
+#password-input[type=password]:focus {width:  300px;}
 
 .loginBtn[type=submit]{
   color:black;
-  width:40%;
+  width:240px;
   background-color: transparent;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 10px 0px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left:55px
 }
 
 .loginBtn:hover {
   background-color: rgb(25, 31, 15);
   color: beige;
 }
+
