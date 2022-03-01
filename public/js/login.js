@@ -19,7 +19,9 @@ const loginFormHandler = async (event) => {
         document.location.replace('/');
         console.log("log in success")
       } else {
-        alert(response.statusText);
+        console.log(response.body)
+        alert("Incorrect email or password, please try again");
+       
       }
     }
   };
