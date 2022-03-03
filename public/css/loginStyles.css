@@ -1,11 +1,8 @@
 .login-card{
-  display: flex;
   margin-top:10%;
-  flex-direction: column;
   text-align: center;
   height: 60vh;
-  flex-wrap: wrap;
- 
+
 }
 
 #email-login[type=text]{
