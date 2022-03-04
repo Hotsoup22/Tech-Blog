@@ -11,19 +11,25 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ```
 
 ## Table of Contents (Optional)
+
 If your README is long, add a table of contents to make it easy for users to find what they need.
 - [Live Site](https://mvc-techblog-117.herokuapp.com/)
 - [Usage](#Usage)
 - [Contact](#Contact)
 - [Badges](#Badges)
 - [Future Development](#Future-Dev)
+
 ## Installation
+
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+
 ## Usage
-    sign up/log-in
-    go to dashboard
-    create new posts!
-    also visit the homepage Tech Blog to see new posts.
+
+ -  sign up/log-in
+ -  A dashboard
+ -  create new posts!
+ -  delete posts
+ -  also visit the homepage Tech Blog to see new posts from anybody who has an acc and made a post.
   
 ![alt text](assets/app-screenshot.png)
 
@@ -34,18 +40,20 @@ What are the steps required to install your project? Provide a step-by-step desc
 ---
 
 ## Badges
+
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Features
 
     Sequelize
     Express.js
     MySQL2
     Handlebars.js
-
+    custom css
 # Future Dev
 
-    Add a function for Delete button functionality
-    Add a GET blog by ID 
-    Add css styling 
-    Update Content post cards to include author name
+- comment section 
+- sort blog feature
+    
+  
