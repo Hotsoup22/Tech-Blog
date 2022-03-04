@@ -30,8 +30,9 @@ What are the steps required to install your project? Provide a step-by-step desc
  -  create new posts!
  -  delete posts
  -  also visit the homepage Tech Blog to see new posts from anybody who has an acc and made a post.
-  
-![alt text](assets/app-screenshot.png)
+
+<img src="assets/techblog-screenshot.png" alt="screenshot-app" width="800"/>
+
 
 ## Contact
 
