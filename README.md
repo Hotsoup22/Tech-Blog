@@ -21,6 +21,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Usage
 open link browser, create an account and sign-in. Also check out the home page to see post from other users!
+
 Note: feel free to create a fake account to test, this is educational purposes only.
  -  sign up/log-in
  -  A dashboard
