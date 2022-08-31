@@ -12,16 +12,12 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
 - [Live Site](https://mvc-techblog-117.herokuapp.com/)
 - [Usage](#Usage)
 - [Contact](#Contact)
 - [Badges](#Badges)
 - [Future Development](#Future-Dev)
 
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 ## Usage
 
