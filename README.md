@@ -29,6 +29,20 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 <img src="assets/techblog-screenshot.png" alt="screenshot-app" width="800"/>
 
+## Built With
+
+Dependencies
+- bcrypt: A library to help you hash passwords
+- connect-session-sequelize: connect-session-sequelize is a SQL session store using Sequelize.js
+- dotenv: Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
+- express : minimal and flexible Node.js web application framework
+- express-handlebars: A Handlebars view engine for Express 
+- express-session: Create a session middleware
+- mysql2: MySQL client for Node.js
+- sequelize: Sequelize a ORM for Node.js
+ 
+Dev Dependencies
+- nodemon: automatically restarting the node application when file changes in the directory are detected.
 
 ## Contact
 
@@ -41,13 +55,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
 
-    Sequelize
-    Express.js
-    MySQL2
-    Handlebars.js
-    custom css
 # Future Dev
 
 - comment section 
