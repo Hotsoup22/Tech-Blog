@@ -20,12 +20,13 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 
 ## Usage
-
+open link browser, create an account and sign-in. Also check out the home page to see post from other users!
+Note: feel free to create a fake account to test, this is educational purposes only.
  -  sign up/log-in
  -  A dashboard
  -  create new posts!
  -  delete posts
- -  also visit the homepage Tech Blog to see new posts from anybody who has an acc and made a post.
+ -  visit the homepage of Tech Blog to see new posts from anybody who has an account and made a post.
 
 <img src="assets/techblog-screenshot.png" alt="screenshot-app" width="800"/>
 
